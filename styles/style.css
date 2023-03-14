@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,20 +10,65 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  height: 32px;
+  width: 228px;
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  z-index: 1;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+  z-index: 1;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+}
+
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
+  z-index: -1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +77,11 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+.padding-top_100 {
+  padding-top: 100px;
+}
+
+.padding-bottom_100 {
+  padding-bottom: 100px;
 }
