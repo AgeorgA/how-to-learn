@@ -1,8 +1,68 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  list-style: none;
+  /* border: 1px solid red; */
 }
+.link-style-no-underline {
+  text-decoration: none;
+}
+
+.font-style-25px {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.font-style-30px {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.font-style-34px {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.font-style-51px {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.font-style-1-15-24px {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.font-style-1-15-60px {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.font-style-1-2 {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.margin-top_90 {
+  margin-top: 90px;
+}
+.margin-top_100 {
+  margin-top: 100px;
+}
+.padding_top_bottom_100 {
+  padding: 100px 0;
+}
+.margin_bottom_90 {
+  margin-bottom: 90px;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -15,9 +75,9 @@
 }
 
 .header {
-  height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -50,9 +110,6 @@
   bottom: 30px;
   left: 64px;
   z-index: 2;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .header__main-illustration {
@@ -88,9 +145,6 @@
 .two-columns__brief {
   color: #2f80ed;
   width: 175px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -100,9 +154,6 @@
 }
 
 .two-columns__paragraph {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
 }
 
 .two-columns__paragraph:nth-child(n + 2) {
@@ -110,8 +161,6 @@
 }
 
 .text-bold {
-  line-height: 34px;
-  font-size: 24px;
   font-weight: 600;
 }
 
@@ -123,16 +172,10 @@
 
 .section-title {
   width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
   text-align: center;
 }
 .section-subtitle {
   width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   text-align: center;
 }
 .section-subtitle_margin-top {
@@ -150,16 +193,10 @@
 }
 
 .table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
 }
 
 .table__text {
   margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .feynman {
@@ -182,22 +219,14 @@
 }
 .feynman__subtitle {
   margin-top: 70px;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
 }
 .feynman__link {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
   color: #2f80ed;
-  text-decoration: none;
   position: absolute;
   top: 50%;
   right: 48px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .kaufman {
   display: flex;
   justify-content: center;
@@ -221,17 +250,65 @@
   margin-top: 80px;
 }
 .kaufman__triangle {
+  background-image: url(/images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
-  height: 877px;
-  width: 877px;
   right: -210px;
   top: 0;
+  height: 877px;
+  width: 877px;
   z-index: -1;
 }
 
-.margin-top_90 {
-  margin-top: 90px;
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
-.margin-top_100 {
-  margin-top: 100px;
+
+.footer__theme_dark {
+  color: white;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 40px 0;
+}
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo_place_footer {
+}
+.footer__author {
+  margin: 18px 0;
+}
+.footer__column_content_info {
+}
+.footer__column-heading {
+}
+.footer__column-links {
+  margin: 20px 0 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-weight: normal;
+}
+.footer__column_content_social {
+}
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
