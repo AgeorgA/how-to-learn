@@ -32,7 +32,7 @@
 
 .header__title {
   max-width: 730px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   z-index: 2;
   line-height: 96px;
   font-size: 102px;
@@ -228,6 +228,7 @@
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 .section-title_theme_dark {
   color: white;
@@ -258,6 +259,7 @@
   width: 877px;
   margin: 0;
   padding: 0;
+  z-index: -1;
 }
 
 .footer {
