@@ -5,9 +5,4 @@
   font-weight: normal;
   text-decoration: none;
   align-self: start;
-  transition: opacity 1s;
-}
-
-.khan__buy-link:hover {
-  opacity: 0.5;
 }
